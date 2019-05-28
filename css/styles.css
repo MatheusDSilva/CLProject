@@ -1,9 +1,14 @@
+html, body{
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   padding-top: 100px
 }
 
 h1 {
-  color: red;
+  color: #b5c8a2;
   text-shadow: 2px 2px 4px white;
   text-align: center;
   padding: 0;
@@ -18,9 +23,14 @@ p {
   text-align: center;
 }
 
+.backgroundcolor {
+  background: linear-gradient(transparent, #C8A2C8)
+} 
+
 .header {
   padding: 10px 16px;
-  background: no-repeat center url(../img/test.jpg);
+  /* background: bottom right url(../img/test.jpg); */
+  background: linear-gradient(#C8A2C8, transparent);
   background-size: cover;
   color: #f1f1f1;
   margin: -9px;
@@ -29,16 +39,6 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-.content {
-  padding: 16px;
-}
-
-
-
-.sticky + .content {
-  padding-top: 102px;
 }
 
 .recipes {
@@ -55,36 +55,32 @@ p {
 }
 
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .resize {
-  width: 400px;
-  height: auto;
+  width: 100%;
+  max-width: 500px; 
+  height: 100%;
+  background-size: cover;
   box-shadow: 0 0 6px #C8A2C8;
   padding: 5px;
   margin: 5px;
 }
 
 .images {
-  columns: 3;
+  columns: 4;
   list-style-type: none;
   background: lightgrey;
   padding: 5px;
   margin: 5px;
   background: no-repeat center;
-  background-size: cover;
+  background-size: contain;
   display: inline-block;
-  position: relative;
+  
 }
 
 .columns {
   padding: 0;
   margin: 0;
-  position: relative;
+  
 }
 
 .footer {
@@ -92,12 +88,13 @@ p {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: grey;
+  background-color: #c8a2b5;
   color: white;
   text-align: center;
   margin: 5px 0;
   padding: 5px;
   line-height: 5px; 
+  border: 2px solid #b5a2c8;
 }
 
 /* Style all font awesome icons */
@@ -121,6 +118,22 @@ p {
   color: white;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media  (max-width: 1900px) {
+  body {
+    width: 100%;
+  }
+
+  .images {
+    columns: 3;
+    width: 100%;
+  }
+}
 
 @media  (max-width: 1300px) {
   body {
@@ -155,3 +168,4 @@ p {
     width: 92%;
     height: auto;
   }
+}
