@@ -1,0 +1,132 @@
+body {
+  padding-top: 100px
+}
+
+h1 {
+  color: red;
+  text-shadow: 2px 2px 4px white;
+  text-align: center;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  text-align: center;
+}
+
+.lilac {
+  background: linear-gradient(blue, red)
+}
+
+.header {
+  padding: 10px 16px;
+  background: no-repeat center url(../img/test.jpg);
+  background-size: cover;
+  color: #f1f1f1;
+  margin: -9px;
+  border-radius: 0 0 10% 10%;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  padding: 16px;
+}
+
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.recipes {
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif; 
+  font-size: 50px; 
+  font-style: italic; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 22px;
+  text-shadow: 2px 2px white;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.resize {
+  width: 400px;
+  height: auto;
+  box-shadow: 0 0 6px #C8A2C8;
+  padding: 5px;
+  margin: 5px;
+}
+
+.images {
+  columns: 3;
+  list-style-type: none;
+  background: lightgrey;
+  padding: 5px;
+  margin: 5px;
+  background: no-repeat center;
+  background-size: cover;
+  display: inline-block;
+}
+
+.columns {
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  margin: 5px 0;
+  padding: 5px;
+  line-height: 5px; 
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #8a3ab9;
+  color: white;
+}
+
+/* body {
+  background-color: #C8A2C8;
+} */
