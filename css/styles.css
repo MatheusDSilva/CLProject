@@ -18,10 +18,6 @@ p {
   text-align: center;
 }
 
-.lilac {
-  background: linear-gradient(blue, red)
-}
-
 .header {
   padding: 10px 16px;
   background: no-repeat center url(../img/test.jpg);
@@ -39,11 +35,7 @@ p {
   padding: 16px;
 }
 
-/* .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-} */
+
 
 .sticky + .content {
   padding-top: 102px;
@@ -86,11 +78,13 @@ p {
   background: no-repeat center;
   background-size: cover;
   display: inline-block;
+  position: relative;
 }
 
 .columns {
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 .footer {
@@ -127,6 +121,37 @@ p {
   color: white;
 }
 
-/* body {
-  background-color: #C8A2C8;
-} */
+
+@media  (max-width: 1300px) {
+  body {
+    width: 100%;
+  }
+
+  .images {
+    columns: 2;
+    width: 100%;
+  }
+}
+
+@media  (max-width: 870px) {
+  body {
+    width: 100%;
+    padding-top: 150px;
+    margin: 0;
+    font-size-adjust: inherit;
+  }
+
+  .content  {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .images {
+    columns: 1;
+  }
+
+  .resize {
+    width: 92%;
+    height: auto;
+  }
