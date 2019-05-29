@@ -1,17 +1,27 @@
-// // When the user scrolls the page, execute myFunction 
-// window.onscroll = function() {myFunction()};
+function myFunction() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck");
+    // Get the images
+    var images = document.getElementsByClassName("choice1")[0];
+  
+    // If the checkbox is checked, remove the images
+    if (checkBox.checked == true){
+      images.style.display = "none";
+    } else {
+      images.style.display = "block";
+    }
+  }
 
-// // Get the header
-// var header = document.getElementById("myHeader");
-
-// // Get the offset position of the navbar
-// var sticky = header.offsetTop;
-
-// // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// } 
+  function myFunction2() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck2");
+    // Get the images
+    var images = document.getElementsByClassName("choice2")[0];
+    
+    // If the checkbox is checked, remove the images
+    if (checkBox.checked == true){
+      images.style.display = "none";
+    } else {
+      images.style.display = "block";
+    }
+  }
