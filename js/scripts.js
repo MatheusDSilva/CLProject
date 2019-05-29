@@ -1,6 +1,7 @@
 function myFunction() {
     // Get the checkbox
     var checkBox = document.getElementById("myCheck");
+
     // Get the images
     var images = document.getElementsByClassName("choice1")[0];
   
@@ -15,8 +16,10 @@ function myFunction() {
   function myFunction2() {
     // Get the checkbox
     var checkBox = document.getElementById("myCheck2");
+
     // Get the images
     var images = document.getElementsByClassName("choice2")[0];
+    // while (checkBox.checked == true)
     
     // If the checkbox is checked, remove the images
     if (checkBox.checked == true){
