@@ -96,6 +96,28 @@ img {max-width:100%;}
 
 }
 
+
+/* About page specific */
+
+.about {
+  margin-left: 35%;
+  margin-right: 35%;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.headshot {
+  float: left;
+  position: absolute;
+  margin: 10px;
+}
+.headshotpic {
+  width: auto;
+  height: 400px;
+  
+}
+
 .footer {
   position: relative;
   left: 0;
@@ -108,9 +130,9 @@ img {max-width:100%;}
   padding: 5px;
   line-height: 5px; 
   border: 2px solid #b5a2c8;
+  height: 100%;
 }
 
-/* Style all font awesome icons */
 .fa {
   padding: 10px;
   font-size: 30px;
@@ -120,7 +142,6 @@ img {max-width:100%;}
   border-radius: 50%;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
 }
