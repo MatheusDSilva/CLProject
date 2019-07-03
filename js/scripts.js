@@ -1,30 +1,19 @@
-function myFunction() {
-    // Get the checkbox
-    var checkBox = document.getElementById("myCheck");
+function change() {
+  let results = Array.from(document.querySelectorAll('.result > div'));
 
-    // Get the images
-    var images = document.getElementsByClassName("choice1")[0];
-  
-    // If the checkbox is checked, remove the images
-    if (checkBox.checked == true){
-      images.style.display = "none";
-    } else {
-      images.style.display = "block";
-    }
-  }
+  results.forEach(function(result) {
+    result.style.display = 'none';
+  });
 
-  function myFunction2() {
-    // Get the checkbox
-    var checkBox = document.getElementById("myCheck2");
+  Array.from(document.querySelectorAll('.filter input[rel]:checked'), function(input) {
+    const attrib = input.getAttribute('rel');
+    results = results.filter(function(result) {
+      return result.classList.contains(attrib);
+    });
+  });
 
-    // Get the images
-    var images = document.getElementsByClassName("choice2")[0];
-    // while (checkBox.checked == true)
-    
-    // If the checkbox is checked, remove the images
-    if (checkBox.checked == true){
-      images.style.display = "none";
-    } else {
-      images.style.display = "block";
-    }
-  }
+  results.forEach(function(result) {
+    result.style.display = 'block';
+  });
+}
+change();
