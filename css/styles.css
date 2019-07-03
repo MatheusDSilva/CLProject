@@ -1,6 +1,7 @@
 html, body{
   margin: 0px;
   padding: 0px;
+  background: linear-gradient(transparent, #C8A2C8)
 }
 
 body {
@@ -16,8 +17,8 @@ h1 {
 }
 
 li {
-  padding: 5px;
-  margin: 5px;
+  padding-right: 5px;
+  margin-right: 5px;
 }
 
 p {
@@ -26,9 +27,7 @@ p {
 
 img {max-width:100%;}
 
-.backgroundcolor {
-  background: linear-gradient(transparent, #C8A2C8)
-} 
+
 
 .header {
   padding: 10px 16px;
@@ -90,7 +89,7 @@ img {max-width:100%;}
   box-shadow: 0 0 6px #C8A2C8;
   padding: 5px;
   margin: 5px;
-  height: 350px;
+  max-height: 350px;
 }
 
 .images {
