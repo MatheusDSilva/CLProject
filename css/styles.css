@@ -43,6 +43,7 @@ img {max-width:100%;}
   width: 100%;
 }
 
+
 .recipes {
   text-align: center;
   padding: 5px;
@@ -105,8 +106,24 @@ img {max-width:100%;}
   flex-shrink: inherit;
   align-self: center;
   object-fit: contain;
- 
 }
+
+.con1 {
+  position: relative;
+}
+
+.description {
+  background: radial-gradient(#C8A2C8 50%, transparent 80%);
+  color: #598032;
+  font-weight: bolder;
+  padding: 10px 50px 10px 50px;
+  position: absolute;
+  bottom: 4px;
+  right: 20px;
+  font-size: 25px;
+  font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+}
+
 
 .columns {
   padding: 5px;
@@ -136,6 +153,8 @@ img {max-width:100%;}
   
 }
 
+/* End  about page */
+
 .footer {
   position: relative;
   left: 0;
@@ -144,13 +163,14 @@ img {max-width:100%;}
   background-color: #c8a2b5;
   color: white;
   text-align: center;
-  margin: 5px 0;
-  padding: 5px;
+  margin: 5px 0 0 0;
+  padding: 5px 0 0 0;
   line-height: 5px; 
   border: 2px solid #b5a2c8;
-  height: 100%;
+
 }
 
+/* Social media selectors */
 .fa {
   padding: 10px;
   font-size: 30px;
@@ -182,51 +202,3 @@ img {max-width:100%;}
     text-align: left;
     padding: 0;
   }
-
-}
-
-/* @media  (max-width: 1900px) {
-  body {
-    width: 100%;
-  }
-
-  .images {
-    columns: 3;
-    width: 100%;
-  }
-}
-
-@media  (max-width: 1300px) {
-  body {
-    width: 100%;
-  }
-
-  .images {
-    columns: 2;
-    width: 100%;
-  }
-}
-
-@media  (max-width: 870px) {
-  body {
-    width: 100%;
-    padding-top: 150px;
-    margin: 0;
-    font-size-adjust: inherit;
-  }
-
-  .content  {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .images {
-    columns: 1;
-  }
-
-  .resize {
-    width: 92%;
-    height: auto;
-  }
-} */

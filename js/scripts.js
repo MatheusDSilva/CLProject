@@ -16,4 +16,3 @@ function change() {
     result.style.display = 'block';
   });
 }
-change();
