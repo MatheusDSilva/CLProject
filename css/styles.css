@@ -13,6 +13,7 @@ h1 {
   text-shadow: 2px 2px 4px white;
   text-align: left;
   padding: 0 50px;
+  margin-top: 8px;
   font-size: 50px;
 }
 
@@ -38,7 +39,7 @@ label {
 .header {
   padding: 10px 16px;
   /* background: bottom right url(../img/test.jpg); */
-  background: linear-gradient(#C8A2C8, transparent);
+  background: linear-gradient(#C8A2C8 60%, transparent);
   background-size: cover;
   color: #f1f1f1;
   margin: -9px;
@@ -55,6 +56,8 @@ label {
   top: 4%;
   z-index: 1000;
   cursor: pointer;
+  padding: 0;
+  margin-top: 0;
 }
 
 
@@ -229,9 +232,10 @@ label {
 }
 
 @media (max-width: 600px) {
-  h1 {
+  h1, .menu {
     font-size: 200%;
     text-align: left;
     padding: 0;
+    top: 11px;
   }
 }
