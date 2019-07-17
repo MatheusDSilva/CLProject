@@ -51,7 +51,7 @@ label {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   right: 4%;
   top: 4%;
   z-index: 1000;
@@ -118,7 +118,7 @@ label {
 .resize {
   /* max-width: 50%; */
   background-size: contain;
-  box-shadow: 0 0 6px #C8A2C8;
+  box-shadow: 0 0 6px rgb(202, 137, 202);
   padding: 5px;
   margin: 5px;
   max-height: 350px;
