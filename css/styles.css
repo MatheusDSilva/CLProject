@@ -175,6 +175,11 @@ label {
 
 }
 
+.hidden {
+  display: none;
+  bottom: 0;
+}
+
 
 /* About page specific */
 
@@ -229,13 +234,13 @@ label {
 
 /* Instagram */
 .fa-instagram {
-  background: #8a3ab9;
+  background: radial-gradient(#125688,#ffc838, #fb3958 20%, #458eff );
   color: white;
   margin-bottom: 10px;
 }
 
 .fa-tumblr {
-  background: #8a3ab9;
+  background: #34526f;
   color: white;
   margin-bottom: 10px;
 }
