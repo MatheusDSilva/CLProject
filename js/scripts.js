@@ -5,8 +5,8 @@ function change() {
     result.style.display = 'none';
   });
 // Filters results to only those that meet requirements
-  Array.from(document.querySelectorAll('.filter input[rel]:checked'), function(input) {
-    const attrib = input.getAttribute('rel');
+  Array.from(document.querySelectorAll('.filter input[data-category]:checked'), function(input) {
+    const attrib = input.dataset.category;
     results = results.filter(function(result) {
       return result.classList.contains(attrib);
     });
