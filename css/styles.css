@@ -223,6 +223,13 @@ label {
 .fa-instagram {
   background: #8a3ab9;
   color: white;
+  margin-bottom: 10px;
+}
+
+.fa-tumblr {
+  background: #8a3ab9;
+  color: white;
+  margin-bottom: 10px;
 }
 
 .clearfix::after {
